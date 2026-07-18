@@ -130,6 +130,9 @@ sop-to-agent-workflow/
 ├── README.md                    ← this file (the method + your question answered)
 ├── templates/
 │   └── skill-template.md        ← copy this per SOP
+├── examples/
+│   ├── EXAMPLE-A-agent-deal-analysis.md   ← AI AGENT: full pipeline → a real skill
+│   └── EXAMPLE-B-nonagent-prompt.md       ← NON-AGENT: just the RCCF prompt, one-off
 ├── skills/                      ← finished skill files land here
 └── TEST_AND_REFINE.md           ← the checklist for graduating a skill to "active"
 ```
