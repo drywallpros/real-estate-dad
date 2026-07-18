@@ -1,48 +1,47 @@
-# SOP → AI Agent Workflow
+# Claude Playbook
 
-A playbook for turning business SOPs into working AI agents with Claude — plus the
-prompt habits you use on every project. Everything is organized **by purpose**, in the
-order you'd actually use it.
-
----
-
-## Start here
-
-**Not sure which approach you need?** → **[`1-start-here/which-path.md`](1-start-here/which-path.md)**
-
-It sorts any task into one of three lanes:
-
-| Lane | You're doing… | Folder |
-|---|---|---|
-| **A** | One good answer, once | `2-prompt-framework/` |
-| **B** | Building an app / website / cron job | *your normal project folders — not here* |
-| **C** | Building a reusable AI worker | `3-build-ai-workers/` |
-
-The prompt framework (Lane A) is also the tool you use *inside* Lanes B and C.
+How to get great work out of Claude — organized into four folders. Start with the
+one that matches what you're doing.
 
 ---
 
-## The folders, by purpose
+## The four folders
 
-### `1-start-here/` — decide
-- **which-path.md** — the decision guide: which of the three lanes am I in?
+### `1-ai-worker/` — build a job Claude does over and over
+For a task you repeat and want automated (e.g. "analyze a property"). You write it
+down once as a "worker," and Claude does it the same way forever. Covers building a
+single worker (**one-off**) and connecting several (**chain**).
 
-### `2-prompt-framework/` — how to talk to Claude *(used in every project)*
-- **framework.md** — the Role + Context + Command + Format (RCCF) method explained.
-- **sample-prompt.md** — copy-paste skeleton + filled samples (real estate + drywall).
+### `2-create-instructions/` — how to write a good instruction to Claude
+The 4-part method (who to be · what it needs to know · what to do · what the answer
+should look like). **You use this in every folder.** Includes a copy-paste template.
 
-### `3-build-ai-workers/` — how to build a team of Claudes *(agents only)*
-- **pipeline.md** — the full SOP → skill → test → agent pipeline + the two orchestration shapes.
-- **skill-template.md** — copy this once per SOP to write a skill.
-- **test-and-refine.md** — checklist to graduate a skill to an "active agent."
+### `3-sop/` — write down how a job works
+An SOP is the plain-English steps for a task. It's the raw material — the starting
+point before you build an AI worker. Includes a fill-in template.
 
-### `4-examples/` — worked end-to-end examples
-- **example-A-ai-agent-skill.md** — full pipeline turning the Deal Analysis SOP into a real skill.
-- **example-B-non-agent-prompt.md** — the same framework as a one-off prompt (no agent).
+### `4-everyday-projects/` — normal work (apps, websites, one-off asks)
+Building an app or website, a cron job, or getting a one-time answer. No agents, no
+pipeline — you just write a good instruction and let Claude do it.
 
 ---
 
-## The one-sentence mental model
+## Which folder do I need?
 
-- **Prompt framework** (folder 2) = how you *talk to Claude*. Used everywhere.
-- **The pipeline** (folder 3) = how you *build a team of Claudes*. Used only when the thing you're building is itself an AI agent.
+| I want to… | Folder |
+|---|---|
+| Get a good answer / build an app / build a website | **4-everyday-projects** |
+| Write down how a job works | **3-sop** |
+| Turn a repeated job into an automated worker | **1-ai-worker** (start from a 3-sop) |
+| Word any instruction better | **2-create-instructions** |
+
+---
+
+## The one thing that ties it together
+
+Every folder uses the same core skill: **writing a clear instruction** (folder 2).
+- Everyday work → write the instruction, done.
+- AI worker → write the instruction *once*, save it, reuse forever.
+
+The SOP (folder 3) is how you figure out *what* the instruction should say. The AI
+worker (folder 1) is what you get when you save a good instruction permanently.
