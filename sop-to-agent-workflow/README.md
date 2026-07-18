@@ -49,6 +49,48 @@ Repeat once per SOP. Five SOPs → five skills → five agents, coordinated by o
 
 ---
 
+## The two orchestration shapes (both diagrams)
+
+The build pipeline above is the same every time. What changes is **how you wire
+the finished agents together**. Your slides showed two different shapes — you'll
+use both, for different jobs.
+
+### Shape A — Fan-out (parallel): one Editor → many independent agents
+*(the "Editor at the top" slide)*
+
+```
+                    EDITOR / ORCHESTRATOR
+        ┌───────┬───────┼───────┬───────┐
+        ↓       ↓       ↓       ↓       ↓
+     Agent1  Agent2  Agent3  Agent4  Agent5      ← each owns one SOP
+        └───────┴───────┴───────┴───────┘
+              → to complete those tasks/SOPs
+```
+
+- The Editor **routes** each incoming task to the right specialist agent.
+- Agents are **independent** — they don't depend on each other's output.
+- Best when tasks are **separate** (e.g. "analyze a deal" vs "draft outreach" vs "run the nightly search"). Any of them can run on its own.
+
+### Shape B — Chain (sequential): agent → agent → agent
+*(the "connect them all together" slide)*
+
+```
+  SOP1 → skill → test → Agent1 ──┐
+  SOP2 → skill → test → Agent2 ──┤   output of one
+  SOP3 → skill → test → Agent3 ──┤   feeds the next →
+  SOP4 → skill → test → Agent4 ──┘
+   Agent1 → Agent2 → Agent3 → Agent4   (and you connect them all together)
+```
+
+- Each agent's **output becomes the next agent's input** — a pipeline.
+- Best when tasks are **stages of one bigger job** (e.g. find deal → analyze it → build action plan → draft outreach).
+
+**Which do I use?** Independent jobs → **Shape A** (fan-out under an Editor).
+Stages of one job → **Shape B** (chain). Real systems mix both: an Editor
+fans out to specialists, and *inside* one branch a few agents chain together.
+
+---
+
 ## The prompt framework (the RCCF pattern)
 
 Every skill instruction — and honestly every good prompt — has four parts:
