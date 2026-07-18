@@ -129,7 +129,8 @@ Two things the diagram leaves out that you should always add to a skill:
 sop-to-agent-workflow/
 ├── README.md                    ← this file (the method + your question answered)
 ├── templates/
-│   └── skill-template.md        ← copy this per SOP
+│   ├── skill-template.md        ← copy this per SOP
+│   └── rccf-prompt.md           ← copy-paste sample prompt (Role+Context+Command+Format)
 ├── examples/
 │   ├── EXAMPLE-A-agent-deal-analysis.md   ← AI AGENT: full pipeline → a real skill
 │   └── EXAMPLE-B-nonagent-prompt.md       ← NON-AGENT: just the RCCF prompt, one-off
