@@ -40,7 +40,7 @@
         h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; letter-spacing: -0.01em; color: var(--ink); }
         h4 { font-family: var(--sans); font-weight: 700; letter-spacing: -0.01em; }
         p { color: var(--slate); }
-        strong { color: var(--ink); font-weight: 600; }
+        strong { color: var(--ink); font-weight: 700; background: linear-gradient(180deg, transparent 62%, rgba(11,102,201,.18) 62%); padding: 0 1px; }
         a { color: var(--blue); }
         .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
         .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
@@ -79,7 +79,7 @@
         .eyebrow-pill { display: inline-flex; align-items: center; gap: 8px; background: var(--soft2); color: var(--blue-dark); font-size: 12.5px; font-weight: 600; padding: 7px 14px; border-radius: 999px; letter-spacing: .02em; }
         .eyebrow-pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
         .hero h1 { font-size: clamp(34px, 4.8vw, 56px); margin: 20px 0 18px; max-width: 15ch; }
-        .hero h1 em { font-style: normal; color: var(--blue); }
+        .hero h1 em { font-style: normal; background: linear-gradient(90deg, var(--blue), var(--sky)); -webkit-background-clip: text; background-clip: text; color: transparent; }
         .hero .lede { font-size: clamp(16.5px, 1.6vw, 19px); color: var(--slate); max-width: 52ch; margin-bottom: 30px; }
         .hero .lede strong { color: var(--ink); }
         .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
@@ -115,10 +115,11 @@
 
         /* SECTIONS */
         section { padding: 78px 0; }
-        section.soft { background: var(--soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+        section.soft { background: linear-gradient(180deg, #f4f7fb, #eaf1f9); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
         .sec-head { max-width: 760px; margin-bottom: 42px; }
         .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
-        .eyebrow { display: inline-block; font-family: var(--mono); font-size: 12.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
+        .eyebrow { display: inline-block; background: linear-gradient(90deg, var(--blue), var(--sky)); color: #fff; font-family: var(--mono); font-size: 11.5px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; padding: 6px 13px; border-radius: 999px; margin-bottom: 14px; box-shadow: 0 5px 14px rgba(11,102,201,.28); }
+        .eyebrow.bonus { background: linear-gradient(90deg, #c67d16, #e6a94a); box-shadow: 0 5px 14px rgba(178,107,18,.3); }
         .h2 { font-size: clamp(27px, 3.6vw, 40px); margin-bottom: 16px; }
         .lede { font-size: clamp(16.5px, 1.7vw, 19px); color: var(--slate); }
         section, .sec-head { scroll-margin-top: 76px; }
@@ -161,9 +162,9 @@
 
         /* CARDS */
         .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 18px; }
-        .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-sm); transition: transform .16s, box-shadow .16s, border-color .16s; }
+        .card { position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-sm); transition: transform .16s, box-shadow .16s, border-color .16s; }
         .card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--line-2); }
-        .card .idx { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 9px; background: var(--soft2); color: var(--blue); font-family: var(--mono); font-weight: 600; font-size: 14px; margin-bottom: 13px; }
+        .card .idx { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, var(--blue), var(--sky)); color: #fff; font-family: var(--mono); font-weight: 600; font-size: 14px; margin-bottom: 13px; box-shadow: 0 5px 14px rgba(11,102,201,.28); }
         .card h4 { font-size: 16.5px; margin-bottom: 6px; color: var(--ink); }
         .card p { font-size: 14px; color: var(--slate); }
         .card .course-meta { display: inline-block; margin-top: 12px; font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .02em; color: var(--blue-dark); background: var(--soft2); padding: 5px 11px; border-radius: 999px; }
@@ -171,7 +172,8 @@
         /* STATS */
         .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px; }
         .stat { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-sm); }
-        .stat .big { font-family: var(--mono); font-weight: 600; font-size: clamp(26px, 3.6vw, 34px); color: var(--blue); line-height: 1; margin-bottom: 8px; }
+        .stat { text-align: center; }
+        .stat .big { font-family: var(--mono); font-weight: 600; font-size: clamp(30px, 4vw, 40px); background: linear-gradient(90deg, var(--blue), var(--sky)); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1; margin-bottom: 8px; }
         .stat .lbl { font-size: 13.5px; color: var(--slate); }
 
         /* FLOW */
@@ -182,12 +184,12 @@
         .flow-step.hot { background: #fff; border: 1.5px solid var(--blue); box-shadow: 0 8px 20px rgba(11,102,201,.14); position: relative; }
         .flow-step.hot::before { content: ""; position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px; border-radius: 3px; background: var(--blue); }
         .flow-step.hot .t { color: var(--blue-dark); } .flow-step.hot .s { color: var(--slate); }
-        .flow-arrow { text-align: center; color: var(--line-2); font-size: 15px; line-height: 1.2; }
+        .flow-arrow { text-align: center; color: var(--blue); font-size: 20px; line-height: 1; font-weight: 700; }
 
         /* PHASES */
         .phases { display: grid; gap: 14px; }
         .phase { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; box-shadow: var(--shadow-sm); }
-        .phase .n { width: 42px; height: 42px; border-radius: 11px; background: var(--soft2); color: var(--blue); font-family: var(--mono); font-weight: 600; font-size: 17px; display: flex; align-items: center; justify-content: center; }
+        .phase .n { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--blue), var(--sky)); color: #fff; font-family: var(--mono); font-weight: 600; font-size: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 16px rgba(11,102,201,.3); }
         .phase h4 { font-size: 16.5px; margin-bottom: 5px; }
         .phase p { font-size: 14.5px; color: var(--slate); }
         .phase .deliver { display: inline-block; margin-top: 11px; font-family: var(--mono); font-size: 12px; color: var(--blue-dark); background: var(--soft2); padding: 5px 11px; border-radius: 7px; }
@@ -246,6 +248,20 @@
         .note p { font-size: 17.5px; color: var(--ink); line-height: 1.7; margin-bottom: 14px; }
         .note .sig { font-family: var(--serif); font-size: 26px; color: var(--ink); margin-top: 10px; line-height: 1.2; }
         .note .sig small { display: block; font-family: var(--mono); font-size: 12px; color: var(--slate); font-weight: 500; letter-spacing: .03em; margin-top: 6px; }
+
+        /* STORY MOMENT (pivot / hierarchy break) */
+        .moment { background: linear-gradient(160deg, #e7f0fb 0%, #f4f8fd 100%); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+        .moment .wrap { max-width: 880px; padding: 66px 24px; text-align: center; }
+        .moment .mlabel { display: inline-block; font-family: var(--mono); font-size: 11.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--blue-dark); margin-bottom: 18px; }
+        .moment .big-line { font-family: var(--serif); font-size: clamp(28px, 4.6vw, 48px); font-weight: 600; color: var(--ink); line-height: 1.18; letter-spacing: -0.01em; }
+        .moment .big-line em { font-style: normal; background: linear-gradient(90deg, var(--blue), var(--sky)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .moment .sub { font-size: clamp(16.5px, 1.8vw, 19px); color: var(--slate); margin: 18px auto 0; max-width: 620px; }
+
+        /* IMPORTANCE BADGES + ARROWS */
+        .pop-badge { position: absolute; top: -11px; right: 14px; background: linear-gradient(90deg, #c67d16, #e6a94a); color: #fff; font-family: var(--mono); font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 4px 11px; border-radius: 999px; box-shadow: 0 6px 14px rgba(178,107,18,.32); white-space: nowrap; }
+        .save-badge { position: absolute; top: 16px; right: 16px; background: linear-gradient(90deg, #c67d16, #e6a94a); color: #fff; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: .03em; padding: 6px 12px; border-radius: 999px; box-shadow: 0 6px 14px rgba(178,107,18,.32); }
+        .big-arrow { text-align: center; font-size: 30px; line-height: 1; color: var(--blue); margin: 4px auto 24px; }
+        .big-arrow .lbl { display: block; font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--blue-dark); margin-bottom: 4px; }
     </style>
 </head>
 <body>
@@ -410,6 +426,15 @@
         </div>
     </section>
 
+    <!-- STORY PIVOT -->
+    <section class="moment">
+        <div class="wrap">
+            <span class="mlabel">Here is the shift</span>
+            <div class="big-line">You don't have a hustle problem. <em>You have a finding problem.</em></div>
+            <p class="sub">Fix how you find deals, and everything after it gets easier. That is the whole idea behind Real Estate Dad.</p>
+        </div>
+    </section>
+
     <!-- SOLUTION -->
     <section id="solution">
         <div class="wrap">
@@ -467,7 +492,7 @@
                 <p class="lede">Every kind of deal has its own playbook, and the app walks you through each one step by step, the right way. You learn the play while you run it. New ones get added over time.</p>
             </div>
             <div class="cards">
-                <div class="card"><span class="idx">01</span><h4>Beat the Bank to It</h4><p>Catch the filing the day it posts, size up the equity, reach out fairly, and make an offer you can stand behind.</p><span class="course-meta">Pre-Foreclosure &middot; 7 steps &middot; scripts + fair-offer calculator</span></div>
+                <div class="card"><span class="pop-badge">Start Here</span><span class="idx">01</span><h4>Beat the Bank to It</h4><p>Catch the filing the day it posts, size up the equity, reach out fairly, and make an offer you can stand behind.</p><span class="course-meta">Pre-Foreclosure &middot; 7 steps &middot; scripts + fair-offer calculator</span></div>
                 <div class="card"><span class="idx">02</span><h4>The Back-Taxes Goldmine</h4><p>Find owners behind on their taxes and walk the county process to pick up the property.</p><span class="course-meta">Tax-Delinquent &middot; 6 steps &middot; county process map</span></div>
                 <div class="card"><span class="idx">03</span><h4>The Inherited-House Play</h4><p>Reach heirs and executors with respect, and buy the inherited homes families would rather not keep.</p><span class="course-meta">Probate &middot; 6 steps &middot; heir outreach scripts</span></div>
                 <div class="card"><span class="idx">04</span><h4>Courthouse Steps</h4><p>Understand the county sale, do your homework, and bid the right way, with the risks flagged up front.</p><span class="course-meta">Tax Deed &amp; Tax Lien &middot; 5 steps &middot; bidding + risk checklist</span></div>
@@ -634,7 +659,7 @@
     <section id="bonus">
         <div class="wrap">
             <div class="sec-head">
-                <span class="eyebrow">Included bonus</span>
+                <span class="eyebrow bonus">Free Bonus, Included</span>
                 <h2 class="h2">SignFlow: Run Every Job From Lead to Paid.</h2>
                 <p class="lede">And you do not just get one app. You get <strong>SignFlow</strong> too, free. It runs your whole job start to finish: the lead, the booking, the estimate, the customer's signature, the crew, the sign-offs, the final okay, the payment, and the warranty. Every step is saved and time-stamped, so nothing slips through the cracks and nothing turns into your word against theirs.</p>
             </div>
@@ -710,7 +735,9 @@
                 <div class="worth-row"><span class="i">Lifetime ownership, no monthly fee</span><span class="v">Priceless</span></div>
                 <div class="worth-row tot"><span class="i">Total value</span><span class="v">$40,000+</span></div>
             </div>
+            <div class="big-arrow"><span class="lbl">Here is your price</span>&darr;</div>
             <div class="price-card" style="max-width:580px; margin:0 auto; text-align:center;">
+                <span class="save-badge">Save $35k+</span>
                 <span class="kick">Your one-time investment</span>
                 <div class="title">Real Estate Dad, Custom Build</div>
                 <div class="amt" style="justify-content:center;"><span class="n">$4,999</span></div>
@@ -730,6 +757,7 @@
                 <h2 class="h2">Ready to Start Building Real Wealth?</h2>
                 <p class="lede">Read the terms and sign. The second you sign, we start building your machine, and you stop watching wealth pass you by.</p>
             </div>
+            <div class="big-arrow"><span class="lbl">Start here</span>&darr;</div>
             <div class="sign-card">
                 <form id="proposal-form" action="https://formspree.io/f/mkovvjjw" method="POST">
                     <div class="terms">
