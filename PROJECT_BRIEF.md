@@ -86,7 +86,7 @@ Updates Wealth Plan
 
 ### 2. Property Explorer
 **Search by:** address, ZIP, county, city.
-**Filters:** tax delinquent, probate, foreclosure, vacant, high equity, free & clear, land, commercial, multifamily, development, owner occupied, absentee owner.
+**Filters:** pre-foreclosure (lis pendens), tax delinquent, probate, foreclosure, vacant, high equity, free & clear, land, commercial, multifamily, development, owner occupied, absentee owner.
 
 ### 3. Opportunity Score
 Every property receives: Overall Score, Strategy Match, Risk Score, Capital Fit, Timeline Fit, Confidence Score.
@@ -127,6 +127,16 @@ Purchased → Added to portfolio
 ```
 
 Each step stores its documents, contacts, notes, and the AI's next recommended action. Months later the user can ask *"What happened with the Bowie duplex?"* and get the full history — every call, letter, document, and the recommended next move. This continuity is hard to reproduce manually and is what lifts the app above a property-search tool.
+
+### 13. Deal Playbooks *(guided, per deal type)*
+For each deal type — starting with **pre-foreclosure / lis pendens** — the app runs a **step-by-step playbook** that walks the user from the public filing to a signed deal: find → verify property, liens, and equity → understand the owner's situation → reach out lawfully and fairly → make a fair-value offer → get it under contract with the right disclosures → close or assign within state rules. Each step says exactly what to do, who to contact, what to ask, and what to watch for, and drops the next step on the calendar. The playbook **guides and reminds; it does not auto-track deal phases** — the user drives, the app coaches.
+
+**Compliance & fair-dealing guardrails (baked in):**
+- Outreach respects Do-Not-Call / TCPA and state solicitation and licensing rules; the app coaches compliant, non-pressure contact only.
+- Offers use a **fair-value range, never "just what they owe"**; the app flags equity the owner would give up.
+- Flags foreclosure-rescue and equity-purchase laws (mandatory disclosures, rescission rights) and recommends title/attorney review before contracting.
+- Flags states that restrict or require disclosure/licensing for **contract assignment / wholesaling**.
+- Extra care and plain-language disclosure for owners in active distress. No pressure tactics, ever (ties to Section 8).
 
 ---
 
@@ -207,7 +217,7 @@ Two workers feed the app, and the app decides which to use per job:
 
 | Job | Who does it | Cost |
 |---|---|---|
-| **Find distressed lists** (tax-sale, probate, foreclosure, code violations) | **AI browser workers** reading free public county sites | **$0** |
+| **Find distressed lists** (lis pendens / pre-foreclosure, tax-sale, probate, foreclosure, code violations) | **AI browser workers** reading free public county sites | **$0** |
 | **Property details / value / rent estimates** | Licensed API (on-demand, gap-fill) | Per lookup, cheap |
 | **Owner contact info** (phone, email — skip-trace) | Licensed API | The main real spend |
 | **Score / explain / action plan / coaching** | Claude (already owned) | **$0 new** |
