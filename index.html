@@ -236,6 +236,15 @@
         #err { display: none; background: #fbeeec; border: 1px solid #f0d3ce; color: #a3402f; border-radius: var(--radius); padding: 16px; margin-top: 16px; text-align: center; font-size: 14px; font-weight: 600; }
         .foot { text-align: center; padding: 34px 24px 46px; color: var(--slate); font-size: 13px; }
         .foot .name { color: var(--ink); font-weight: 600; }
+
+        /* PERSONAL NOTE */
+        .note-wrap { background: var(--soft); border-bottom: 1px solid var(--line); }
+        .note { max-width: 720px; margin: 0 auto; padding: 46px 24px; }
+        .note .from { display: flex; align-items: center; gap: 12px; font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; }
+        .note .from .badge { width: 38px; height: 38px; border-radius: 50%; background: var(--blue); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--sans); font-weight: 700; font-size: 13px; box-shadow: 0 4px 12px rgba(11,102,201,.3); }
+        .note p { font-size: 17.5px; color: var(--ink); line-height: 1.7; margin-bottom: 14px; }
+        .note .sig { font-family: var(--serif); font-size: 26px; color: var(--ink); margin-top: 10px; line-height: 1.2; }
+        .note .sig small { display: block; font-family: var(--mono); font-size: 12px; color: var(--slate); font-weight: 500; letter-spacing: .03em; margin-top: 6px; }
     </style>
 </head>
 <body>
@@ -336,6 +345,18 @@
             </div>
         </div>
     </header>
+
+    <!-- PERSONAL NOTE -->
+    <section class="note-wrap">
+        <div class="note">
+            <div class="from"><span class="badge">KA</span> A note from Kay Ali</div>
+            <p>Duwyne, you already know how to build. You do it every day for other people. This is about building something for you.</p>
+            <p>I put this together because you should not spend your nights digging through county records, or pay someone to do it badly. Let the app do the hunting. You do what you are great at, and you keep the wealth you build.</p>
+            <p>Everything in here is real. No hype, no fake numbers. If a line does not fit you, we change it. This is your app, built your way.</p>
+            <p style="margin-bottom:0;">Let's build it.</p>
+            <div class="sig">Kay<small>Kay Ali &middot; kawani@digiwaxx.com</small></div>
+        </div>
+    </section>
 
     <!-- SUMMARY -->
     <section id="summary">
