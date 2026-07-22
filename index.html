@@ -39,6 +39,8 @@
     </script>
 
     <style>
+        html { scroll-behavior: smooth; }
+        section[id] { scroll-margin-top: 5.5rem; }
         body {
             background-color: #ffffff;
             color: #1f2937;
@@ -119,27 +121,23 @@
     </div>
 
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a class="flex items-center gap-2 text-ink no-underline font-heading font-black text-xl tracking-tight" href="#top">
-                <span class="w-8 h-8 rounded bg-brandblue flex items-center justify-center shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+            <a class="flex items-center gap-2 text-ink no-underline font-heading font-black text-xl tracking-tight whitespace-nowrap flex-shrink-0" href="#top">
+                <span class="w-8 h-8 rounded bg-brandblue flex items-center justify-center shadow-md flex-shrink-0">
                     <svg viewBox="0 0 100 100" class="w-5 h-5"><path d="M20 54 L50 28 L80 54 L80 80 L20 80 Z" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round"/></svg>
                 </span>
-                Real Estate <span class="text-brandblue">Dad</span>
+                Real Estate&nbsp;<span class="text-brandblue">Dad</span>
             </a>
-            <div class="hidden lg:flex gap-6 overflow-x-auto text-sm font-semibold text-slate">
-                <a href="#summary" class="hover:text-brandblue transition-colors">Summary</a>
-                <a href="#problem" class="hover:text-brandblue transition-colors">The Problem</a>
-                <a href="#solution" class="hover:text-brandblue transition-colors">How it works</a>
-                <a href="#playbook" class="hover:text-brandblue transition-colors">Playbook</a>
-                <a href="#university" class="hover:text-brandblue transition-colors">University</a>
-                <a href="#edge" class="hover:text-brandblue transition-colors">Your Edge</a>
-                <a href="#funding" class="hover:text-brandblue transition-colors">Funding</a>
-                <a href="#payoff" class="hover:text-brandblue transition-colors">The Play</a>
-                <a href="#compare" class="hover:text-brandblue transition-colors">Comparison</a>
-                <a href="#bonus" class="hover:text-brandblue transition-colors">Bonus</a>
-                <a href="#investment" class="hover:text-brandblue transition-colors">Pricing</a>
+            <div class="hidden md:flex items-center gap-x-5 gap-y-1 text-sm font-semibold text-slate flex-wrap justify-end">
+                <a href="#summary" class="hover:text-brandblue transition-colors whitespace-nowrap">Summary</a>
+                <a href="#solution" class="hover:text-brandblue transition-colors whitespace-nowrap">How it works</a>
+                <a href="#playbook" class="hover:text-brandblue transition-colors whitespace-nowrap">Playbook</a>
+                <a href="#funding" class="hover:text-brandblue transition-colors whitespace-nowrap">Funding</a>
+                <a href="#payoff" class="hover:text-brandblue transition-colors whitespace-nowrap">The Play</a>
+                <a href="#compare" class="hover:text-brandblue transition-colors whitespace-nowrap">Compare</a>
+                <a href="#bonus" class="hover:text-brandblue transition-colors whitespace-nowrap">Bonus</a>
+                <a href="#investment" class="text-brandblue hover:text-branddark transition-colors whitespace-nowrap font-bold">Pricing</a>
             </div>
-            <a class="hidden md:inline-flex bg-brandblue hover:bg-branddark text-white text-sm font-bold py-2 px-4 rounded transition-colors shadow-md" href="#investment">View pricing</a>
         </div>
     </nav>
 
@@ -153,7 +151,7 @@
                     Real Wealth Is Built on Deals Most People Never Find. <mark>You're About to Find Them.</mark>
                 </h1>
                 <p class="text-lg md:text-xl text-slate font-medium mb-8 leading-relaxed">
-                    Real Estate Dad is not another investing app. It is your wealth-building machine. It hunts down the deals that build real money, checks every one, and hands you the play: who to call, what to say, what to watch for. Then it pins the next step to your calendar so you actually move. You pay one time. <strong class="text-ink font-black bg-yellow-100 px-1">$4,999.</strong> No monthly bill, ever.
+                    Real Estate Dad is not another investing app. It is your wealth-building machine. It hunts down the deals that build real money, checks every one, and hands you the play: who to call, what to say, what to watch for. Then it pins the next step to your calendar so you actually move. You pay one time to build it. <strong class="text-ink font-black bg-yellow-100 px-1">$4,999.</strong> No monthly software fee. The only ongoing cost is the data, about $100 a month.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 mb-8">
                     <a class="bg-brandblue hover:bg-branddark text-white font-heading font-bold text-lg py-4 px-8 rounded-lg shadow-lg text-center transition-all transform hover:-translate-y-1" href="#investment">See How It Pays Off</a>
@@ -161,7 +159,7 @@
                 </div>
                 <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate">
                     <span class="flex items-center gap-1"><svg class="w-4 h-4 text-brandblue" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg> Pay once, own it</span>
-                    <span class="flex items-center gap-1"><svg class="w-4 h-4 text-brandblue" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg> No monthly fee</span>
+                    <span class="flex items-center gap-1"><svg class="w-4 h-4 text-brandblue" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg> No software subscription</span>
                     <span class="flex items-center gap-1"><svg class="w-4 h-4 text-brandblue" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg> Pays for itself fast</span>
                     <span class="flex items-center gap-1"><svg class="w-4 h-4 text-brandblue" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg> Free bonus app</span>
                 </div>
@@ -301,7 +299,7 @@
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <span class="inline-block bg-gradient-to-r from-brandblue to-blue-400 text-white font-mono text-xs font-bold tracking-widest uppercase py-2 px-4 rounded-full mb-4 shadow-md">The big picture</span>
                 <h2 class="font-heading font-black text-3xl md:text-5xl text-ink leading-tight mb-6">The Rich Don't Chase Deals.<br>They Have a System That Finds Them.</h2>
-                <p class="text-lg text-slate font-medium">Right now you might pay a VA, a researcher, or a list service to hunt for deals. That's <strong>$1,000 to $5,000 every month</strong>, and they still miss the ones that matter. This app does all of it, never lets a good one slip past you, and you pay one time. That is how the wealthy keep more of what they make and put it to work.</p>
+                <p class="text-lg text-slate font-medium">If you hire it out, a VA, a researcher, or a list service to hunt for deals runs <strong>$1,000 to $5,000 a month</strong>, and they still miss the ones that matter. This app does all of it, so good ones stop slipping past you, and you pay one time. That is how the wealthy keep more of what they make and put it to work.</p>
             </div>
 
             <p class="text-lg font-bold text-ink mb-6">Here is the help you pay for today. The app does every bit of it.</p>
@@ -616,14 +614,14 @@
             <div class="max-w-3xl mb-12">
                 <span class="inline-block bg-gradient-to-r from-brandblue to-blue-400 text-white font-mono text-xs font-bold tracking-widest uppercase py-2 px-4 rounded-full mb-4 shadow-md">Your contractor edge</span>
                 <h2 class="font-heading font-black text-3xl md:text-5xl text-ink leading-tight mb-6">Know the Real Cost.<br>And Your Cut of It.</h2>
-                <p class="text-lg text-slate font-medium">You cannot fund what you cannot cost. So for every property, the app builds an itemized rehab or build estimate, then highlights the work you do yourself and shows what you save doing it at cost. That number is your edge, in writing.</p>
+                <p class="text-lg text-slate font-medium">You cannot fund what you cannot cost. So for every property, the app gives you a starting rehab estimate and highlights the work you do yourself, so you can see what you save doing it at cost. You know these trades cold, so you sharpen the number. That is your edge, in writing.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 items-start">
                 <div class="space-y-4">
                     <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-                        <h4 class="font-heading font-bold text-lg text-ink mb-2">A Real Number, Not a Guess</h4>
-                        <p class="text-slate font-medium">Line by line, like a real build sheet: roof, framing, HVAC, drywall, paint, plumbing, and the rest. Priced for your area, so the deal math holds up.</p>
+                        <h4 class="font-heading font-bold text-lg text-ink mb-2">A Starting Estimate to Work From</h4>
+                        <p class="text-slate font-medium">A line-by-line ballpark: roof, framing, HVAC, drywall, paint, and the rest. You sharpen it with your own pricing, because nobody knows these trades better than you.</p>
                     </div>
                     <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
                         <h4 class="font-heading font-bold text-lg text-ink mb-2">Distressed Houses Fail in Your Trades</h4>
@@ -661,18 +659,19 @@
                         <div class="font-heading font-black text-4xl md:text-5xl text-brandblue leading-none">$38,100</div>
                         <div class="text-sm text-slate font-medium mt-2">on a single house, before mold work</div>
                     </div>
-                    <p class="text-xs text-slate italic mt-4">Real figures from a recent build. Your deals will vary, and the app prices each one for you.</p>
+                    <p class="text-xs text-slate italic mt-4">Example figures from a real build, shown to illustrate the idea. Your deals will vary, and the app gives you a starting estimate to sharpen.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="funding" class="py-20 bg-white">
-        <div class="max-w-5xl mx-auto px-4">
+    <section id="funding" class="py-24 bg-brandblue text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 20% 30%, #fff 1.5px, transparent 1.5px), radial-gradient(circle at 70% 60%, #fff 1.5px, transparent 1.5px); background-size: 44px 44px;"></div>
+        <div class="max-w-5xl mx-auto px-4 relative">
             <div class="max-w-3xl mb-12">
-                <span class="inline-block bg-gradient-to-r from-brandblue to-blue-400 text-white font-mono text-xs font-bold tracking-widest uppercase py-2 px-4 rounded-full mb-4 shadow-md">Funding and leverage</span>
-                <h2 class="font-heading font-black text-3xl md:text-5xl text-ink leading-tight mb-6">Finding the Deal Is Half.<br>Funding It Is the Other Half.</h2>
-                <p class="text-lg text-slate font-medium">A great deal you cannot pay for is not a deal. So for every property it finds, the app lays out every way on the planet to fund it, from bank loans to seller financing to money you already control. Then it shows which ones actually fit this deal, and you.</p>
+                <span class="inline-block bg-hormoziyellow text-ink font-mono text-xs font-bold tracking-widest uppercase py-2 px-4 rounded-full mb-4 shadow-md">Funding and leverage</span>
+                <h2 class="font-heading font-black text-3xl md:text-5xl text-white leading-tight mb-6">Finding the Deal Is Half.<br>Funding It Is the Other Half.</h2>
+                <p class="text-lg text-blue-50 font-medium">A great deal you cannot pay for is not a deal. So for every property it finds, the app lays out the ways to fund it, from bank loans to seller financing to money you already control, and points you toward the ones worth a closer look for this deal.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
@@ -763,12 +762,12 @@
 
             <div class="grid md:grid-cols-2 gap-6 mt-6">
                 <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-                    <h4 class="font-heading font-bold text-lg text-ink mb-2">It Runs the Numbers With the Money In</h4>
-                    <p class="text-slate font-medium">For each option, the app shows what you can borrow, what it costs, the monthly payment, and whether the deal still makes money after all of it. If the financing kills the deal, it tells you before you sign anything.</p>
+                    <h4 class="font-heading font-bold text-lg text-ink mb-2">It Explains Each Option in Plain English</h4>
+                    <p class="text-slate font-medium">For each path, the app tells you what it is, roughly how it works, and the tradeoffs, so you walk into a lender or seller knowing exactly what you want to ask for instead of guessing. The final numbers come from your lender, not the app.</p>
                 </div>
                 <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-                    <h4 class="font-heading font-bold text-lg text-ink mb-2">Then It Builds Your Funding Plan</h4>
-                    <p class="text-slate font-medium">A clear plan for the property: how much down, where the rest comes from, who to call, and what to have ready. It drops the next step on your calendar so nothing stalls.</p>
+                    <h4 class="font-heading font-bold text-lg text-ink mb-2">It Helps You Line Up a Plan</h4>
+                    <p class="text-slate font-medium">A simple checklist for the property: the options worth exploring, who to call, and what to have ready. Then it drops the next step on your calendar so nothing stalls.</p>
                 </div>
             </div>
 
@@ -786,8 +785,8 @@
         <div class="max-w-5xl mx-auto px-4">
             <div class="max-w-3xl mb-12">
                 <span class="inline-block bg-gradient-to-r from-brandblue to-blue-400 text-white font-mono text-xs font-bold tracking-widest uppercase py-2 px-4 rounded-full mb-4 shadow-md">The whole game</span>
-                <h2 class="font-heading font-black text-3xl md:text-5xl text-ink leading-tight mb-6">Buy a Distressed House.<br>Turn It Into an Asset That Pays Forever.</h2>
-                <p class="text-lg text-slate font-medium">This is a strategy the app maps out for you, start to finish, on a distressed property that qualifies, the same kind your wife is already looking at. Here is a real three family deal so you can see exactly how a beat up house becomes an asset that pays forever. Then see where your crews make the math even better.</p>
+                <h2 class="font-heading font-black text-3xl md:text-5xl text-ink leading-tight mb-6">Buy a Distressed House.<br>Turn It Into an Asset That Pays You.</h2>
+                <p class="text-lg text-slate font-medium">This is the kind of play the app helps you spot and walk through, on a distressed property that qualifies, the same kind your wife is already looking at. Here is a real three family deal, shown as an example, so you can see how a beat up house becomes an asset that cash flows. Then see where your crews make the math even better.</p>
             </div>
 
             <div class="space-y-4">
@@ -856,7 +855,7 @@
             <div class="mt-8 bg-ink text-white rounded-2xl p-8 md:p-10 shadow-float text-center">
                 <div class="font-mono text-xs font-bold tracking-widest uppercase text-hormoziyellow mb-3">The payoff</div>
                 <h3 class="font-heading font-black text-3xl md:text-4xl mb-4 leading-tight">Infinite Return</h3>
-                <p class="text-lg font-medium text-blue-100 max-w-2xl mx-auto mb-6">Once all $260,000 is back in your pocket, none of your money is in the deal. Every dollar it makes from here is 100% profit, forever. The equity is already over $300,000, and this was bought less than six months ago.</p>
+                <p class="text-lg font-medium text-blue-100 max-w-2xl mx-auto mb-6">Once all $260,000 is back in your pocket, none of your own money is left in the deal. From there, the cash flow is pure profit, with more than $250,000 in equity behind it. In this example, that happened in under a year.</p>
                 <div class="inline-block bg-hormoziyellow text-ink font-heading font-black text-xl md:text-2xl uppercase px-6 py-3 rounded-lg shadow-md transform -rotate-1">Your money out. The wealth stays.</div>
             </div>
 
@@ -875,7 +874,7 @@
             <div class="max-w-3xl mb-12">
                 <span class="inline-block bg-gradient-to-r from-brandblue to-blue-400 text-white font-mono text-xs font-bold tracking-widest uppercase py-2 px-4 rounded-full mb-4 shadow-md">The edge</span>
                 <h2 class="font-heading font-black text-3xl md:text-4xl text-ink leading-tight mb-6">Other Tools Hand You a List.<br>This Hands You the Play.</h2>
-                <p class="text-lg text-slate font-medium">PropStream, DealMachine, and BatchLeads give you a list and leave the hard part to you. Real Estate Dad does the thinking for you, and it remembers every deal you touch.</p>
+                <p class="text-lg text-slate font-medium">PropStream, DealMachine, and BatchLeads give you a list and leave the hard part to you. Real Estate Dad does the thinking for you, and it keeps every opportunity you are working in one place.</p>
             </div>
 
             <div class="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden mb-4">
@@ -915,7 +914,7 @@
                                 <td class="p-4 font-medium text-slate text-center text-sm">No</td>
                             </tr>
                             <tr class="table-row-hover">
-                                <td class="p-4 font-medium text-ink">Remembers the full deal history</td>
+                                <td class="p-4 font-medium text-ink">Keeps your opportunities in one place</td>
                                 <td class="p-4 font-bold text-brandblue text-center">Yes</td>
                                 <td class="p-4 font-medium text-slate text-center text-sm">No</td>
                             </tr>
@@ -927,13 +926,13 @@
                             <tr class="bg-gray-50 border-t-2 border-gray-200">
                                 <td class="p-4 font-bold text-ink">Monthly cost</td>
                                 <td class="p-4 font-bold text-branddark text-center font-mono text-sm bg-blue-50">$20 to $100 data</td>
-                                <td class="p-4 font-medium text-yellow-600 text-center font-mono text-sm">$99 and up flat</td>
+                                <td class="p-4 font-medium text-yellow-600 text-center font-mono text-sm">Monthly fee, forever</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <p class="text-sm text-slate font-medium">It turns a name on a list into a closed deal. That is the part those tools leave to you.</p>
+            <p class="text-sm text-slate font-medium">It turns a name on a list into a deal you know how to work. That is the part those tools leave to you.</p>
         </div>
     </section>
 
@@ -997,7 +996,7 @@
             <div class="text-center mb-16">
                 <span class="inline-block bg-gradient-to-r from-brandblue to-blue-400 text-white font-mono text-xs font-bold tracking-widest uppercase py-2 px-4 rounded-full mb-4 shadow-md">Your investment</span>
                 <h2 class="font-heading font-black text-4xl md:text-5xl text-ink leading-tight mb-6">Own It for $4,999.<br>Or Keep Renting Forever.</h2>
-                <p class="text-xl text-slate font-medium max-w-3xl mx-auto">Investors pay $20,000 or more to build a tool like this. Or they rent one for hundreds a month, forever, and own nothing. You pay one time, own it for good, and only cover the data. One good deal pays for the whole thing.</p>
+                <p class="text-xl text-slate font-medium max-w-3xl mx-auto">A custom-built app like this normally runs many times this price. Or you rent someone else's for hundreds a month, forever, and own nothing. You pay one time, own it for good, and only cover the data. One good deal pays for the whole thing.</p>
             </div>
 
             <!-- Hormozi Style Value Stack -->
@@ -1103,7 +1102,7 @@
                 </a>
 
                 <div class="mt-6 text-sm text-slate font-medium">
-                    <b>Pays for itself in roughly 1.7 to 3.5 months</b>, then keeps building.
+                    <b>One good deal pays it back many times over</b>, then it keeps building.
                 </div>
             </div>
         </div>
